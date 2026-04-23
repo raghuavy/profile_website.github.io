@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research · Avi Raghuvanshi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">AR</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="content-page">
+    <div class="page-header">
+      <div class="tag">Research</div>
+      <h1>Work &amp; <em>Publications</em></h1>
+    </div>
+
+    <section class="research-section">
+
+      <div class="research-card featured">
+        <div class="rc-meta">
+          <span class="rc-tag">Active · LIGO / SkAI Institute</span>
+          <span class="rc-advisor">Advisor: Prof. Michael Coughlin</span>
+        </div>
+        <h2>Anomaly Detection for Astronomical Transients</h2>
+        <p>
+          Developing an evidential deep learning Transformer with a Dirichlet output head to classify
+          ZTF Bright Transient Survey sources and detect anomalies — using tidal disruption events
+          (TDEs) as the held-out anomaly class. Detection relies on trajectory-based Mahalanobis
+          distance across observation horizons, with uncertainty features including vacuity,
+          tr(Cov), total entropy, aleatoric entropy, and mutual information.
+        </p>
+        <p>
+          Contributed to the TDAbench 2026 workshop (SkAI Institute, Chicago), building a benchmark
+          dataset with WISE/Gaia/TESS crossmatches via LSDB, Fausnaugh TESS photometry integration,
+          and joint ZTF+TESS light curve construction.
+        </p>
+        <div class="rc-tags">
+          <span>Transformer</span><span>Evidential DL</span><span>ZTF</span><span>TESS</span><span>Python</span>
+        </div>
+      </div>
+
+      <div class="research-card featured">
+        <div class="rc-meta">
+          <span class="rc-tag">Active · LIGO</span>
+          <span class="rc-advisor">Advisor: Prof. Michael Coughlin</span>
+        </div>
+        <h2>Gravitational Wave Data Analysis</h2>
+        <p>
+          Building matched filter and SNR timeseries pipelines for gravitational wave event analysis
+          using <code>ml4gw</code> and NumPy. Work includes remote development on the LIGO Data Grid
+          server via VS Code Remote SSH.
+        </p>
+        <div class="rc-tags">
+          <span>ml4gw</span><span>LIGO Data Grid</span><span>Signal Processing</span><span>Python</span>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-meta">
+          <span class="rc-tag">Active · Neuromorphic Computing</span>
+          <span class="rc-advisor">Advisor: Prof. Vlad Pribiag</span>
+        </div>
+        <h2>Neuromorphic Circuit Research</h2>
+        <p>
+          Research in neuromorphic computing, exploring novel circuit architectures
+          that emulate neural dynamics for energy-efficient computation.
+        </p>
+        <div class="rc-tags">
+          <span>Neuromorphic</span><span>Circuits</span><span>Device Physics</span>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="rc-meta">
+          <span class="rc-tag">Published · PASP</span>
+        </div>
+        <h2>Astrophysics Publication</h2>
+        <p>
+          Published result in <em>Publications of the Astronomical Society of the Pacific</em> (PASP),
+          with NSF MPS-High grant involvement connected to LIGO/ML research.
+        </p>
+        <div class="rc-tags">
+          <span>PASP</span><span>NSF MPS-High</span><span>Astrophysics</span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <span class="mono">avi.raghuvanshi · university of minnesota</span>
+  </footer>
+</body>
+</html>
