@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research · Avi Raghuvanshi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav>
-    <a href="index.html" class="nav-logo">AR</a>
+    <a href="index.html" class="nav-logo">Avi Raghuvanshi</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="research.html" class="active">Research</a>
@@ -19,87 +20,128 @@
     </div>
   </nav>
 
-  <main class="content-page">
-    <div class="page-header">
-      <div class="tag">Research</div>
-      <h1>Work &amp; <em>Publications</em></h1>
+  <main>
+    <div class="section-label fade-up fd1">Research</div>
+    <h1 class="section-title fade-up fd2">Work &amp; Publications</h1>
+
+    <div class="research-list">
+
+      <div class="rc fade-up fd3">
+        <div class="rc-left">
+          <div class="rc-status active">Active</div>
+          <div class="rc-advisor">
+            <strong>Prof. Michael Coughlin</strong>
+            LIGO · SkAI Institute<br />
+            University of Minnesota
+          </div>
+        </div>
+        <div class="rc-right">
+          <h2>Anomaly Detection for Astronomical Transients</h2>
+          <p>
+            Developing an evidential deep learning Transformer with a Dirichlet output head to
+            classify ZTF Bright Transient Survey sources and detect out-of-distribution anomalies,
+            using tidal disruption events (TDEs) as the held-out anomaly class.
+          </p>
+          <p>
+            Detection is based on trajectory-level Mahalanobis distance across observation horizons,
+            with uncertainty features including vacuity, tr(Cov), total entropy, aleatoric entropy,
+            and mutual information. Contributed to the TDAbench 2026 workshop (SkAI Institute,
+            Chicago), building a benchmark dataset with WISE/Gaia/TESS crossmatches via LSDB
+            and joint ZTF+TESS light curve construction.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">Transformer</span>
+            <span class="tag-pill">Evidential Deep Learning</span>
+            <span class="tag-pill">ZTF / TESS</span>
+            <span class="tag-pill">Anomaly Detection</span>
+            <span class="tag-pill">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc fade-up fd3">
+        <div class="rc-left">
+          <div class="rc-status active">Active</div>
+          <div class="rc-advisor">
+            <strong>Prof. Michael Coughlin</strong>
+            LIGO<br />
+            University of Minnesota
+          </div>
+        </div>
+        <div class="rc-right">
+          <h2>Gravitational Wave Data Analysis</h2>
+          <p>
+            Building matched filter and SNR timeseries pipelines for gravitational wave event
+            analysis using <code style="font-family:monospace;font-size:0.85em;background:#ede9e2;padding:0.1em 0.35em;border-radius:2px;">ml4gw</code> and NumPy,
+            with remote development on the LIGO Data Grid server.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">ml4gw</span>
+            <span class="tag-pill">Matched Filter</span>
+            <span class="tag-pill">LIGO Data Grid</span>
+            <span class="tag-pill">Signal Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc fade-up fd3">
+        <div class="rc-left">
+          <div class="rc-status active">Active</div>
+          <div class="rc-advisor">
+            <strong>Prof. Vlad Pribiag</strong>
+            Neuromorphic Computing<br />
+            University of Minnesota
+          </div>
+        </div>
+        <div class="rc-right">
+          <h2>Neuromorphic Circuit Research</h2>
+          <p>
+            Research into neuromorphic computing architectures — exploring novel circuit designs
+            that emulate neural dynamics for energy-efficient, brain-inspired computation.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">Neuromorphic</span>
+            <span class="tag-pill">Circuit Design</span>
+            <span class="tag-pill">Device Physics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc fade-up fd3">
+        <div class="rc-left">
+          <div class="rc-status published">Published</div>
+          <div class="rc-advisor">
+            <strong>PASP</strong>
+            Publications of the<br />Astronomical Society<br />of the Pacific
+          </div>
+        </div>
+        <div class="rc-right">
+          <h2>Astrophysics Publication</h2>
+          <p>
+            Published research result in <em>Publications of the Astronomical Society of the
+            Pacific</em>, with associated NSF MPS-High grant involvement connected to LIGO
+            and machine learning research.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">PASP</span>
+            <span class="tag-pill">NSF MPS-High</span>
+            <span class="tag-pill">Astrophysics</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <section class="research-section">
-
-      <div class="research-card featured">
-        <div class="rc-meta">
-          <span class="rc-tag">Active · LIGO / SkAI Institute</span>
-          <span class="rc-advisor">Advisor: Prof. Michael Coughlin</span>
-        </div>
-        <h2>Anomaly Detection for Astronomical Transients</h2>
-        <p>
-          Developing an evidential deep learning Transformer with a Dirichlet output head to classify
-          ZTF Bright Transient Survey sources and detect anomalies — using tidal disruption events
-          (TDEs) as the held-out anomaly class. Detection relies on trajectory-based Mahalanobis
-          distance across observation horizons, with uncertainty features including vacuity,
-          tr(Cov), total entropy, aleatoric entropy, and mutual information.
-        </p>
-        <p>
-          Contributed to the TDAbench 2026 workshop (SkAI Institute, Chicago), building a benchmark
-          dataset with WISE/Gaia/TESS crossmatches via LSDB, Fausnaugh TESS photometry integration,
-          and joint ZTF+TESS light curve construction.
-        </p>
-        <div class="rc-tags">
-          <span>Transformer</span><span>Evidential DL</span><span>ZTF</span><span>TESS</span><span>Python</span>
-        </div>
-      </div>
-
-      <div class="research-card featured">
-        <div class="rc-meta">
-          <span class="rc-tag">Active · LIGO</span>
-          <span class="rc-advisor">Advisor: Prof. Michael Coughlin</span>
-        </div>
-        <h2>Gravitational Wave Data Analysis</h2>
-        <p>
-          Building matched filter and SNR timeseries pipelines for gravitational wave event analysis
-          using <code>ml4gw</code> and NumPy. Work includes remote development on the LIGO Data Grid
-          server via VS Code Remote SSH.
-        </p>
-        <div class="rc-tags">
-          <span>ml4gw</span><span>LIGO Data Grid</span><span>Signal Processing</span><span>Python</span>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="rc-meta">
-          <span class="rc-tag">Active · Neuromorphic Computing</span>
-          <span class="rc-advisor">Advisor: Prof. Vlad Pribiag</span>
-        </div>
-        <h2>Neuromorphic Circuit Research</h2>
-        <p>
-          Research in neuromorphic computing, exploring novel circuit architectures
-          that emulate neural dynamics for energy-efficient computation.
-        </p>
-        <div class="rc-tags">
-          <span>Neuromorphic</span><span>Circuits</span><span>Device Physics</span>
-        </div>
-      </div>
-
-      <div class="research-card">
-        <div class="rc-meta">
-          <span class="rc-tag">Published · PASP</span>
-        </div>
-        <h2>Astrophysics Publication</h2>
-        <p>
-          Published result in <em>Publications of the Astronomical Society of the Pacific</em> (PASP),
-          with NSF MPS-High grant involvement connected to LIGO/ML research.
-        </p>
-        <div class="rc-tags">
-          <span>PASP</span><span>NSF MPS-High</span><span>Astrophysics</span>
-        </div>
-      </div>
-
-    </section>
   </main>
 
   <footer>
-    <span class="mono">avi.raghuvanshi · university of minnesota</span>
+    <span class="footer-name">Avi Raghuvanshi</span>
+    <div class="footer-links">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="https://www.linkedin.com/in/raghuavy/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/raghuavy" target="_blank">GitHub</a>
+    </div>
   </footer>
+
 </body>
 </html>
