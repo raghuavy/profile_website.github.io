@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects · Avi Raghuvanshi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <nav>
-    <a href="index.html" class="nav-logo">AR</a>
+    <a href="index.html" class="nav-logo">Avi Raghuvanshi</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -19,79 +20,122 @@
     </div>
   </nav>
 
-  <main class="content-page">
-    <div class="page-header">
-      <div class="tag">Engineering Projects</div>
-      <h1>Built <em>Things</em></h1>
-    </div>
+  <main>
+    <div class="section-label fade-up fd1">Engineering</div>
+    <h1 class="section-title fade-up fd2">Projects</h1>
 
-    <div class="projects-grid">
+    <div class="projects-list">
 
-      <div class="project-card wide">
-        <div class="pc-category">Hardware · UMN Rocket Team</div>
-        <h2>Rocket Avionics &amp; GNC</h2>
-        <p>
-          GNC &amp; Avionics lead work on the UMN Rocket Team. Designed a custom backplane PCB in Altium
-          using the CAN bus protocol, debugged with a logic analyzer. Built a Simulink flight state
-          estimator using sensor fusion for flight stage detection — converted to C via Simulink
-          codegen and embedded into the UFC flight computer. Also designed a LoRa avionics bay PCB for
-          telemetry.
-        </p>
-        <div class="pc-tags">
-          <span>Altium</span><span>CAN Bus</span><span>Simulink</span><span>Sensor Fusion</span><span>Embedded C</span><span>LoRa</span>
+      <div class="pc fade-up fd3">
+        <div class="pc-left">
+          <div class="pc-cat">Hardware · GNC</div>
+          <div class="pc-org">UMN Rocket Team</div>
+        </div>
+        <div class="pc-right">
+          <h2>Rocket Avionics &amp; Guidance, Navigation &amp; Control</h2>
+          <p>
+            GNC &amp; Avionics work on the UMN Rocket Team. Designed a custom backplane PCB in Altium
+            using the CAN bus protocol and debugged with a logic analyzer. Built a Simulink flight state
+            estimator using sensor fusion for flight stage detection — converted to C via Simulink
+            codegen and deployed to the UFC flight computer. Separately designed a LoRa avionics bay
+            PCB for telemetry downlink.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">Altium Designer</span>
+            <span class="tag-pill">CAN Bus</span>
+            <span class="tag-pill">Simulink</span>
+            <span class="tag-pill">Sensor Fusion</span>
+            <span class="tag-pill">Embedded C</span>
+            <span class="tag-pill">LoRa</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="pc-category">ASIC / EDA · Club Founder</div>
-        <h2>ASIC Design &amp; EDA Tools Club</h2>
-        <p>
-          Founding an ASIC Design &amp; EDA Tools Club at UMN with faculty advisor Prof. Yu (Kevin) Cao.
-          Exploring Tiny Tapeout submissions, SCALIS funding, and growing the club's presence for
-          students interested in chip design and EDA workflows.
-        </p>
-        <div class="pc-tags">
-          <span>ASIC</span><span>EDA</span><span>Tiny Tapeout</span><span>RTL</span>
+      <div class="pc fade-up fd3">
+        <div class="pc-left">
+          <div class="pc-cat">Computer Architecture</div>
+          <div class="pc-org">Prof. Zhenman Fang<br />UMN</div>
+        </div>
+        <div class="pc-right">
+          <h2>SpMSpM Hardware Accelerator</h2>
+          <p>
+            Collaborating with Prof. Zhenman Fang on a sparse matrix–sparse matrix multiplication
+            (SpMSpM) hardware accelerator, targeting efficient dataflow and memory access patterns
+            for sparse workloads typical in graph analytics and deep learning inference.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">RTL</span>
+            <span class="tag-pill">FPGA</span>
+            <span class="tag-pill">SpMSpM</span>
+            <span class="tag-pill">HLS</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="pc-category">Computer Architecture · Research</div>
-        <h2>SpMSpM Accelerator</h2>
-        <p>
-          Collaborating with Prof. Zhenman Fang on a sparse matrix–sparse matrix multiplication
-          (SpMSpM) hardware accelerator design, targeting efficient dataflow and memory access
-          patterns for sparse workloads.
-        </p>
-        <div class="pc-tags">
-          <span>RTL</span><span>SpMSpM</span><span>FPGA</span><span>HLS</span>
+      <div class="pc fade-up fd3">
+        <div class="pc-left">
+          <div class="pc-cat">ASIC / EDA</div>
+          <div class="pc-org">Founder<br />Advisor: Prof. Yu (Kevin) Cao · UMN</div>
+        </div>
+        <div class="pc-right">
+          <h2>ASIC Design &amp; EDA Tools Club</h2>
+          <p>
+            Founded the ASIC Design &amp; EDA Tools Club at UMN with faculty advisor Prof. Yu (Kevin)
+            Cao. Activities include Tiny Tapeout chip submissions, SCALIS funding applications,
+            and building a community for students interested in RTL design, EDA toolchains, and
+            physical design flows.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">ASIC</span>
+            <span class="tag-pill">EDA</span>
+            <span class="tag-pill">Tiny Tapeout</span>
+            <span class="tag-pill">RTL Design</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="pc-category">Infrastructure · Dev Setup</div>
-        <h2>Linux Research Server</h2>
-        <p>
-          Set up a Linux Mint laptop as a research server: OpenSSH, xrdp/x11vnc remote desktop,
-          custom desktop ricing, VS Code, and a full FPGA toolchain for Basys 3 with Vivado on
-          Windows and OpenOCD on Linux. Also configured VS Code Remote SSH to the LIGO Data Grid.
-        </p>
-        <div class="pc-tags">
-          <span>Linux</span><span>SSH</span><span>Vivado</span><span>OpenOCD</span><span>FPGA</span>
+      <div class="pc fade-up fd3">
+        <div class="pc-left">
+          <div class="pc-cat">Infrastructure</div>
+          <div class="pc-org">Personal / Research</div>
+        </div>
+        <div class="pc-right">
+          <h2>Linux Research Server &amp; FPGA Dev Environment</h2>
+          <p>
+            Configured a Linux Mint laptop as a research server with OpenSSH, xrdp/x11vnc for remote
+            desktop, and a full FPGA toolchain for Basys 3 (Vivado on Windows, OpenOCD on Linux).
+            Also set up VS Code Remote SSH access to the LIGO Data Grid for remote research workflows.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">Linux</span>
+            <span class="tag-pill">SSH</span>
+            <span class="tag-pill">Vivado</span>
+            <span class="tag-pill">OpenOCD</span>
+            <span class="tag-pill">FPGA</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card wide">
-        <div class="pc-category">Circuits · EE 2015 Lab</div>
-        <h2>Analog Circuit Design Labs</h2>
-        <p>
-          Series of analog design labs: variable-gain and summing amplifiers with intermodulation
-          product analysis (Lab 3), LM741 differential amplifier in audio and thermocouple
-          configurations (Lab 4), and a treble tone-control amplifier with full Fourier and frequency
-          response analysis (Lab 5). All documented in LaTeX with Python-generated plots.
-        </p>
-        <div class="pc-tags">
-          <span>Op-Amps</span><span>LM741</span><span>Filter Design</span><span>SPICE</span><span>LaTeX</span><span>Python</span>
+      <div class="pc fade-up fd3">
+        <div class="pc-left">
+          <div class="pc-cat">Analog Circuits</div>
+          <div class="pc-org">EE 2015<br />University of Minnesota</div>
+        </div>
+        <div class="pc-right">
+          <h2>Analog Circuit Design Lab Series</h2>
+          <p>
+            Lab series covering variable-gain and summing amplifiers with intermodulation product
+            analysis, LM741 differential amplifier in audio and thermocouple configurations, and
+            a treble tone-control amplifier analyzed via Fourier series and frequency response.
+            All documented in LaTeX with Python-generated figures and experimental data tables.
+          </p>
+          <div class="tag-row">
+            <span class="tag-pill">Op-Amps</span>
+            <span class="tag-pill">LM741</span>
+            <span class="tag-pill">Filter Design</span>
+            <span class="tag-pill">LaTeX</span>
+            <span class="tag-pill">Python</span>
+          </div>
         </div>
       </div>
 
@@ -99,7 +143,14 @@
   </main>
 
   <footer>
-    <span class="mono">avi.raghuvanshi · university of minnesota</span>
+    <span class="footer-name">Avi Raghuvanshi</span>
+    <div class="footer-links">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="https://www.linkedin.com/in/raghuavy/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/raghuavy" target="_blank">GitHub</a>
+    </div>
   </footer>
+
 </body>
 </html>
